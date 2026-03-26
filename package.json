@@ -1,0 +1,33 @@
+{
+  "name": "rest-api-typescript",
+  "version": "1.0.0",
+  "description": "This project is a Node.js and TypeScript-based REST API built using Express, MongoDB, and JWT authentication. It provides secure CRUD operations for users, products, and students with validation, rate limiting, and environment configuration",
+  "main": "index.js",
+  "scripts": {
+    "dev":"ts-node src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aswinsivadas-tech/node-rest-api-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aswinsivadas-tech/node-rest-api-typescript/issues"
+  },
+  "homepage": "https://github.com/aswinsivadas-tech/node-rest-api-typescript#readme",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
