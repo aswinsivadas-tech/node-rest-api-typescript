@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import mongoose from 'mongoose';
-import { IUserDocument } from '../interfaces/user.interface.js';
+import { IUserDocument } from '../interface/user.interface.js';
 import User from '../models/User.js';
 
 export const getUsers = async (req: Request, res: Response, next: NextFunction): Promise<void> => {

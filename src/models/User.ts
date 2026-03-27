@@ -1,6 +1,6 @@
 import mongoose, { Schema, Model } from 'mongoose';
 import argon2 from 'argon2';
-import { IUserDocument } from '../interfaces/user.interface.js';
+import { IUserDocument } from '../interface/user.interface.js';
 
 const userSchema = new Schema<IUserDocument>(
   {

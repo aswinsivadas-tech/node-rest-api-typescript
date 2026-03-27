@@ -1,5 +1,5 @@
 import { model, Model, Schema } from 'mongoose';
-import { IStudent } from '../interfaces/student.interface.js';
+import { IStudent } from '../interface/student.interface.js';
 const studentSchema = new Schema<IStudent>(
   {
     name: {

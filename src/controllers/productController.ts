@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import mongoose from 'mongoose';
 import Product from '../models/Product.js';
-import { ProductRequestBody } from '../interfaces/product.interface.js';
+import { ProductRequestBody } from '../interface/product.interface.js';
 
 export const addProduct = async (
   req: Request<{}, {}, ProductRequestBody>,

@@ -6,7 +6,7 @@ import {
   LoginRequestBody,
   UserResponse,
   IUserDocument,
-} from '../interfaces/user.interface.js';
+} from '../interface/user.interface.js';
 
 export const registerUser = async (
   req: Request<{}, {}, RegisterRequestBody>,

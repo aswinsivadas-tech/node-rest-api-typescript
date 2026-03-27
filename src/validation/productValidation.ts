@@ -1,5 +1,5 @@
 import Joi, { ObjectSchema } from 'joi';
-import { CreateProductDTO, UpdateProductDTO } from '../interfaces/product.interface.js';
+import { CreateProductDTO, UpdateProductDTO } from '../interface/product.interface.js';
 
 const noOnlySpaces = Joi.string()
   .pattern(/^(?!\s*$).+/)

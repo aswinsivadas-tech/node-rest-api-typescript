@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import mongoose from 'mongoose';
 import Student from '../models/Student.js';
-import { StudentQuery, StudentRequestBody } from '../interfaces/student.interface.js';
+import { StudentQuery, StudentRequestBody } from '../interface/student.interface.js';
 
 export const addStudent = async (
   req: Request<{}, {}, StudentRequestBody>,
