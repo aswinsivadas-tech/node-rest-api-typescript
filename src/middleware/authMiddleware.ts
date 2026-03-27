@@ -2,17 +2,17 @@ import { Request, Response, NextFunction } from 'express';
 import jwt, { JwtPayload } from 'jsonwebtoken';
 
 declare global {
-    namespace Express {
-        interface Request {
-            user?:{
-                id: string;
-                name: string;
-                admin: boolean;
-                iat?: number;
-                exp?: number;
-            };
-        }
+  namespace Express {
+    interface Request {
+      user?: {
+        id: string;
+        name: string;
+        admin: boolean;
+        iat?: number;
+        exp?: number;
+      };
     }
+  }
 }
 
 export const verifyToken = (req: Request, res: Response, next: NextFunction): void | Response => {

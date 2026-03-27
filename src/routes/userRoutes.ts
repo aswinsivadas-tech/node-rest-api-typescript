@@ -7,4 +7,3 @@ userRoutes.get('/', getUsers);
 userRoutes.get('/:id', getUserByIdPublic);
 
 export default userRoutes;
-
