@@ -4,13 +4,13 @@ import morgan from 'morgan';
 import cors from 'cors';
 import helmet from 'helmet';
 import compression from 'compression';
-import connectDB from './config/db.ts';
-import { errorHandler } from './middleware/error.middleware.ts';
-import { apiLimiter, authLimiter } from './middleware/rateLimiter.middleware.ts';
-import authRoutes from './routes/authRoutes.ts';
-// import userRoutes from './routes/userRoutes.js';
-// import productRoutes from './routes/productRoutes.js';
-// import studentRoutes from './routes/studentRoutes.js';
+import connectDB from './config/db.js';
+import { errorHandler } from './middleware/error.middleware.js';
+import { apiLimiter, authLimiter } from './middleware/rateLimiter.middleware.js';
+import authRoutes from './routes/authRoutes.js';
+import userRoutes from './routes/userRoutes.js';
+import productRoutes from './routes/productRoutes.js';
+import studentRoutes from './routes/studentRoutes.js';
 
 dotenv.config();
 
@@ -42,8 +42,8 @@ await connectDB();
 app.use('/api/auth', authLimiter, authRoutes);
 
 app.use('/api/users', userRoutes);
-// app.use('/api/products', productRoutes);
-// app.use('/api/students', studentRoutes);
+app.use('/api/products', productRoutes);
+app.use('/api/students', studentRoutes);
 
 // Error handling middleware
 app.use(errorHandler);
